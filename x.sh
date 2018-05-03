@@ -8,5 +8,5 @@ javac \
 -classpath \
 $DIRA/target/doc3may-annotations-0.0.1-SNAPSHOT.jar:$DIRP/target/doc3may-processor-0.0.1-SNAPSHOT.jar:$DIRM2/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar \
 -processor \
-io.github.amarcinkowski.doc3may.processor.NewIntentProcessor \
+io.github.amarcinkowski.doc3may.processor.EndpointProcessor \
 $DIRP/src/test/java/org/doc3may/processor/X.java

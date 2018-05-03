@@ -126,7 +126,7 @@
  ^-^-^>							<compilerVersion>1.8</compilerVersion>
 							  <proc>only</proc> 
   								<annotationProcessors>
-								<annotationProcessor>io.github.amarcinkowski.doc3may.processor.NewIntentProcessor</annotationProcessor>
+								<annotationProcessor>io.github.amarcinkowski.doc3may.processor.EndpointProcessor</annotationProcessor>
 							</annotationProcessors>
 							<annotationProcessorPaths>
 								<path>

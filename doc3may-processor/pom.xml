@@ -61,7 +61,7 @@
 						<configuration>
 							<compilerArgument>-proc:none</compilerArgument>
 							<includes>
-								<include>io/github/amarcinkowski/doc3may/processor/NewIntentProcessor.java</include>
+								<include>io/github/amarcinkowski/doc3may/processor/EndpointProcessor.java</include>
 								<!--include dependencies required for LogMeCustomAnnotationProcessor -->
 							</includes>
 						</configuration>
