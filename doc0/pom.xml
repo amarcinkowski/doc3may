@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.github.amarcinkowski</groupId>
+		<artifactId>doc3may</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>doc0</artifactId>
+	<!-- <packaging>maven-plugin</packaging> -->
+	<packaging>jar</packaging>
+
+	<name>doc0</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+<!-- 
+
+	<build>
+	<sourceDirectory>src/main/</sourceDirectory>
+		<plugins>
+		
+		
+		<plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+                <execution>
+                    <phase>generate-sources</phase>
+                    <goals>
+                        <goal>add-source</goal>
+                    </goals>
+                    <configuration>
+                        <sources>
+                            <source>src/main/artifact</source>
+                        </sources>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+		
+		
+ 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-plugin-plugin</artifactId>
+				<version>3.5.1</version>
+			</plugin> 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+					<configuration>
+										           <compilerArgument>-proc:none</compilerArgument>
+					
+<^!^-^- 						<excludes>
+							<exclude>java/**/*.java</exclude>
+						</excludes>
+ ^-^-^>						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				
+				
+				<executions>
+					<^!^-^- EXEC 1 ID1: COMPILE MOJO ^-^-^>
+					<execution>
+						<id>default-compile</id>
+						<^!^-^- <phase>compile</phase> ^-^-^>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<configuration>
+						
+          <^!^-^- Need to disable default annotation processing since apt-maven-plugin takes over ^-^-^>
+          <compilerArgument>-proc:none</compilerArgument>
+          
+  						<includes>
+						<include>**/*.java</include>
+						</includes>
+ <^!^-^- 						<includes>
+						<include>src/main/java/io/github/amarcinkowski/doc0/GreetingMojo.java</include>
+						<include>io/github/amarcinkowski/doc0/GreetingMojo.java</include>
+						</includes> ^-^-^>
+ 						<excludes>
+							<exclude>**/X.java</exclude>
+						</excludes>
+ 						</configuration>
+					</execution>
+
+					<^!^-^- EXEC 2 ID2: process annotations ^-^-^>
+					 <execution>
+					 
+						<id>id2</id>
+						<phase>generate-sources</phase> 
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<configuration>
+					           <compilerArgument>-proc:only</compilerArgument>
+					           <^!^-^- <compilerId>eclipse</compilerId> ^-^-^>
+ 							<includes>
+							<^!^-^- <include>**/X.java</include> ^-^-^>
+							<include>artifact/**/*.java</include>
+ ^-^-^>							</includes> 
+ 													<excludes>
+							<exclude>**/GreetingMojo.java</exclude>
+						</excludes> 
+							<verbose>true</verbose>
+<^!^-^- 							<fork>true</fork>
+ ^-^-^>							<compilerVersion>1.8</compilerVersion>
+							  <proc>only</proc> 
+  								<annotationProcessors>
+								<annotationProcessor>io.github.amarcinkowski.doc3may.processor.NewIntentProcessor</annotationProcessor>
+							</annotationProcessors>
+							<annotationProcessorPaths>
+								<path>
+									<groupId>io.github.amarcinkowski</groupId>
+									<artifactId>doc3may-processor</artifactId>
+									<version>${project.version}</version>
+								</path>
+							</annotationProcessorPaths>
+							   
+						</configuration>
+					</execution> 
+				</executions>
+						<^!^-^- DEPENDENCY FOR eclipse compiler ^-^-^>
+<^!^-^- 				        <dependencies>
+				          <dependency>
+				            <groupId>org.codehaus.plexus</groupId>
+				            <artifactId>plexus-compiler-eclipse</artifactId>
+				            <version>2.8.1</version>
+				          </dependency>
+				        </dependencies> ^-^-^>
+				
+			</plugin>
+		</plugins>
+	</build>
+
+
+ -->
+
+</project>
